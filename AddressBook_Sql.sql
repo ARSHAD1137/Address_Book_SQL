@@ -17,3 +17,7 @@ create table Address_book
  email varchar(100) not null
 );
 select * from Address_book;
+
+Insert into Address_book values
+('Ajay','Singhaniya','Down city','Mumbai','442111',818181881,'ajay@hotmail.com'),
+('Vijay','kadia','Lower parel','Agar','412121',919191991,'vijay@gmail.com')
