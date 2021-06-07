@@ -33,5 +33,18 @@ Delete from Address_book Where firstname='Suresh'
 select firstname from Address_book Where city='Pune'
 select firstname from Address_book where state='Maharashtra'
 
-select COUNT (city)'Size of column' from Address_book
-select COUNT (state)'Size of column' from Address_book
+select COUNT (city)'Size of column'from Address_book Group by city
+select COUNT (state)'Size of column' from Address_book Group by state
+
+select *from Address_book Where city='Pune'
+Order by firstname
+
+alter table Address_book add Book_Name varchar(20),Book_Type varchar(20)
+Update Address_book set Book_Name='Address1',Book_Type='Family' where firstname='Ramesh'
+Update Address_book set Book_Name='Address2',Book_Type='Friends' where firstname='Vijay'
+Update Address_book set Book_Name='Address3',Book_Type='Professional' where firstname='Jack'
+
+select COUNT(Book_Type) as 'Friends' from Address_book where firstname='Vijay'
+
+Insert into Address_book values 
+('Ramesh','Singh','High hill','Pune','Maharashtra',431212,919191191,'ramesh@.gmail.com','null','null','Address1','Friends')
