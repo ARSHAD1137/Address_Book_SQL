@@ -33,5 +33,5 @@ Delete from Address_book Where firstname='Suresh'
 select firstname from Address_book Where city='Pune'
 select firstname from Address_book where state='Maharashtra'
 
-select COUNT (city)'Size of column' from Address_book
-select COUNT (state)'Size of column' from Address_book
+select COUNT (city)'Size of column'from Address_book Group by city
+select COUNT (state)'Size of column' from Address_book Group by state
